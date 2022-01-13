@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>MetaTransaction Demo</title>
+    <script type="module" src="wethMetaTx.js"></script>
+  </head>
+  <body>
+    <h1>Meta-Transactions Demo</h1>
+    <p id="showMessage"></p>
+    <script>
+      window.onload = () => {
+        const messageElement = document.getElementById("showMessage");
+        messageElement.innerText = window.getMessage();
+      };
+    </script>
+    <button onclick="runMetaTx()">Send MetaTx</button>
+  </body>
+</html>
